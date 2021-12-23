@@ -9,9 +9,9 @@ const numCliente = 095864;
 
 let valorEmprestimo = 150000;
 let taxaDeJuros = 10;
-let ehBomPagador = "SIM";
+let ehBomPagador = "SIM"; // tipo de variavel string
 
-ehBomPagador = true;
+ehBomPagador = true; //trocando a Variavel para boolean
 
 if (ehBomPagador){
     console.log("Cliente: " + nome + " é bom pagador !");
