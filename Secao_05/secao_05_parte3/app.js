@@ -1,12 +1,17 @@
-//Contando até 50 !
-for (let i = 1; i <= 50; i++){
-    console.log(i);
+if(idade >= 18 && idade <=25){
+    taxaDeJuros = 0.09;
+}else if(idade >= 26 && idade <=35){
+    taxaDeJuros = 0.08;
+}else if(idade >= 36 && idade <=50){
+    taxaDeJuros = 0.07;
+}else{
+    taxaDeJuros = 0.06;
 }
 
-//Contagem Regresiva
-for (let r = 5; r >= 0; r--) {
-    console.log(r);
-    if(r == 0)  {
-        console.log("Happy New Year !!! Welcome 2022");
-    }
+for (let cont = 0; cont < 3; cont++){
+    valorEmprestimo = parseInt(prompt("Digite o valor do emprestimo"));
+    numAnos = parseInt(prompt("Digite o numero de anos"));
+    let juros = valorEmprestimo * taxaDeJuros * numAnos;
+    let montante = juros + valorEmprestimo;
+    console.log(montante);
 }
