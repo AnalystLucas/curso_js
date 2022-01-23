@@ -1,3 +1,10 @@
+let valorEmprestimo;
+let idade = 24;
+let taxaDeJuros;
+let numAnos;
+let juros;
+let montante;
+
 if(idade >= 18 && idade <=25){
     taxaDeJuros = 0.09;
 }else if(idade >= 26 && idade <=35){
@@ -11,7 +18,7 @@ if(idade >= 18 && idade <=25){
 for (let cont = 0; cont < 3; cont++){
     valorEmprestimo = parseInt(prompt("Digite o valor do emprestimo"));
     numAnos = parseInt(prompt("Digite o numero de anos"));
-    let juros = valorEmprestimo * taxaDeJuros * numAnos;
-    let montante = juros + valorEmprestimo;
+    juros = valorEmprestimo * taxaDeJuros * numAnos;
+    montante = juros + valorEmprestimo;
     console.log(montante);
 }
