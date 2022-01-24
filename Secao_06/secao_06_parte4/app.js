@@ -25,6 +25,6 @@
 // }
 // console.log(areaQuadrado(10));
 
-//Arrow Function mais simplificada dependendo do cenário sem retunr e chaves "{}"
+//Arrow Function mais simplificada dependendo do cenário sem return e chaves "{}"
 const areaQuadrado = lado => lado * lado;
 console.log(areaQuadrado(10));
