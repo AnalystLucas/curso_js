@@ -1,30 +1,11 @@
-//Expressão de Função.
-// const media = function calculaMedia(n1, n2, n3){
-//     let mediaNum = (n1 + n2 + n3 ) / 3;
-//     return mediaNum;
-// }
-// console.log(media(9,7,8));
+//Escopo de Função
 
-//Expressão de Funções Anonima
-// const media = function (n1, n2, n3){
-//     let mediaNum = (n1 + n2 + n3 ) / 3;
-//     return mediaNum;
-// }
-// console.log(media(9,7,8));
+let nome = "Lucas"; // Variavel Global !
 
-//Arrow Function
-// const media = (n1, n2 ,n3) =>{
-//     let mediaNum = (n1 + n2 + n3) / 3;
-//     return mediaNum;
-// }
-// console.log(media(9,7,8));
+function sauda(){
+    //Escopo da Função
+    let saudacao = "Olá Sr(a). " + nome; // Variavel Local !
+    return saudacao;
+}
 
-//Arrow Function sem chaves simplificando
-// const areaQuadrado = lado => {
-//     return lado * lado;
-// }
-// console.log(areaQuadrado(10));
-
-//Arrow Function mais simplificada dependendo do cenário sem return e chaves "{}"
-const areaQuadrado = lado => lado * lado;
-console.log(areaQuadrado(10));
+console.log(sauda());
