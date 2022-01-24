@@ -10,9 +10,19 @@ let ehBomPagador;
 
 
 function cadastrarCliente(nomeCliente, snomeCliente, idadeCliente, valorEmprestimoCliente,
-    numAnosCliente, ehBomPagadorCliente)
+    numAnosCliente, ehBomPagadorCliente){
+    nome = nomeCliente;
+    snome = snomeCliente;
+    idade = idadeCliente;
+    valorEmprestimo = valorEmprestimoCliente;
+    numAnos = numAnosCliente;
+    ehBomPagador = ehBomPagadorCliente;
 
-function defineTaxa(idadeCliente){
+    taxaDeJuros = defineTaxa(idade);
+
+}
+
+function defineTaxa(idade){
     if(idade >= 18 && idade <=25){
         return 0.09;
     }else if(idade >= 26 && idade <=35){
@@ -24,19 +34,13 @@ function defineTaxa(idadeCliente){
     }
 }
 
-// juros = valorEmprestimo * taxaDeJuros * numAnos;
-// montante = juros + valorEmprestimo;
+cadastrarCliente("Lucas","Moreira", 24, 150000, 4, true);
+console.log(nome);
+console.log(idade);
+console.log(taxaDeJuros);
 
-
-    
-while (true){
-    valorEmprestimo = parseInt(prompt("Valor do Emprestimo"));
-    if(valorEmprestimo === 0){
-        break;
-    }
-    numAnos = parseInt(prompt("Digite em quantos Anos de Duração do Emprestimo"));
-    juros = valorEmprestimo * taxaDeJuros * numAnos;
-    montante = juros + valorEmprestimo;
-    console.log(montante);
-}
+cadastrarCliente("Lucas","Santos", 37, 150000, 4, true);
+console.log(nome);
+console.log(idade);
+console.log(taxaDeJuros);
 
