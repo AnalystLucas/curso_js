@@ -1,24 +1,10 @@
-let valorEmprestimo;
-let idade = 24;
-let taxaDeJuros;
-let numAnos;
-let juros;
-let montante;
+// WHILE !!
 
-if(idade >= 18 && idade <=25){
-    taxaDeJuros = 0.09;
-}else if(idade >= 26 && idade <=35){
-    taxaDeJuros = 0.08;
-}else if(idade >= 36 && idade <=50){
-    taxaDeJuros = 0.07;
-}else{
-    taxaDeJuros = 0.06;
-}
+let soma = 0;
+let numero;
 
-for (let cont = 0; cont < 3; cont++){
-    valorEmprestimo = parseInt(prompt("Digite o valor do emprestimo"));
-    numAnos = parseInt(prompt("Digite o numero de anos"));
-    juros = valorEmprestimo * taxaDeJuros * numAnos;
-    montante = juros + valorEmprestimo;
-    console.log(montante);
+while ( soma < 100){
+    numero = parseInt(prompt("Insira um numero"));
+    soma += numero;
+    console.log(soma);
 }
