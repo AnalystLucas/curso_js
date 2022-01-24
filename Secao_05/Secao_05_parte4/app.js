@@ -30,11 +30,11 @@ if(idade >= 18 && idade <=25){
 
 // juros = valorEmprestimo * taxaDeJuros * numAnos;
 // montante = juros + valorEmprestimo;
-valorEmprestimo = 1;
-while (valorEmprestimo != 0){
+
+do{
     valorEmprestimo = parseInt(prompt("Valor do Emprestimo"));
     numAnos = parseInt(prompt("Digite em quantos Anos de Duração do Emprestimo"));
     juros = valorEmprestimo * taxaDeJuros * numAnos;
     montante = juros + valorEmprestimo;
     console.log(montante);
-}
+}while (valorEmprestimo != 0)
